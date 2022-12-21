@@ -1,0 +1,39 @@
+<div class="centerContent">
+  <mat-card>
+    <mat-card-title>
+      <h1>Registration form</h1>
+    </mat-card-title>
+    <mat-card-content>
+      <form id="regForm">
+        <mat-form-field class="max-width" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input type="text" matInput>
+        </mat-form-field>
+        <mat-form-field class="max-width" appearance="fill">
+          <mat-label>Last Name</mat-label>
+          <input type="text" matInput>
+        </mat-form-field>
+        <mat-form-field class="max-width" appearance="fill">
+          <mat-label>User Name</mat-label>
+          <input type="text" matInput>
+        </mat-form-field>
+        <mat-form-field class="max-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput>
+        </mat-form-field>
+        <mat-form-field class="max-width" appearance="fill">
+          <mat-label>Password</mat-label>
+          <input type="password" matInput>
+        </mat-form-field>
+        <mat-form-field class="max-width" appearance="fill">
+          <mat-label>Confirm Password</mat-label>
+          <input type="password" matInput>
+        </mat-form-field>
+        <button id="submitReg" type="submit" mat-raised-button color="primary">Submit</button>
+      </form>
+    </mat-card-content>
+    <mat-card-footer>
+      <p><br>Have an account already? <a (click)="logClick()">login</a></p>
+    </mat-card-footer>
+  </mat-card>
+</div>

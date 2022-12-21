@@ -1,0 +1,26 @@
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+mat-card{
+  width: 350px;
+}
+
+.max-width{
+  width: 100%;
+}
+
+#submitReg{
+  justify-self: flex-end;
+}
+
+a{
+  font-weight: bold;
+  color: #f44336;
+}
+
+a:hover{
+  cursor: pointer;
+}

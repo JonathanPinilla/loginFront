@@ -1,0 +1,33 @@
+.generalContainer{
+
+}
+.bodyCont{
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+.foot{
+  position: absolute;
+  padding: 0 16px;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+.buttonsLanding{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+button{
+  margin-right: 10px;
+}
+
+

@@ -3,8 +3,8 @@
     <h1>Login application</h1>
     <p>Made using Angular for the front end, Java Spring Boot for the back end, and NoSQL MongoDB as database</p>
     <div class="buttonsLanding">
-      <button mat-raised-button color="accent">Login</button>
-      <button mat-raised-button color="accent">Registration</button>
+      <button mat-raised-button color="accent" (click)="changeRoute('login')">Login</button>
+      <button mat-raised-button color="accent" (click)="changeRoute('registration')">Registration</button>
     </div>
   </div>
   <div class="foot">

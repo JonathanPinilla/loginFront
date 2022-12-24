@@ -4,20 +4,29 @@
       <h1>Login form</h1>
     </mat-card-title>
     <mat-card-content>
-      <form id="regForm">
+      <form id="frmForm" autocomplete="off" [formGroup]="frmForm">
+
         <mat-form-field class="max-width" appearance="fill">
           <mat-label>User Name</mat-label>
-          <input type="text" matInput>
+          <input type="text" matInput formControlName="uname" placeholder="Type your user name">
+          <div *ngIf="frmForm.get('uname')?.hasError('required') && !frmForm.pristine">
+            user name is required
+          </div>
         </mat-form-field>
+
         <mat-form-field class="max-width" appearance="fill">
           <mat-label>Password</mat-label>
-          <input type="password" matInput>
+          <input type="password" matInput formControlName="password" placeholder="Type your password">
+          <div *ngIf="frmForm.get('password')?.hasError('required') && !frmForm.pristine">
+            password is required
+          </div>
         </mat-form-field>
-        <button id="submitReg" type="submit" mat-raised-button color="primary">Submit</button>
+
+        <button id="submitReg" type="submit" mat-raised-button color="primary" [disabled]="frmForm.invalid" (click)="showInfo()">Submit</button>
       </form>
     </mat-card-content>
     <mat-card-footer>
-      <p><br>Don't have an account already? <a class="mat-warn" (click)="regClick()">Register</a></p>
+      <p style="margin-top: 12px">Don't have an account already? <a (click)="regClick()">Register</a></p>
     </mat-card-footer>
   </mat-card>
 </div>
